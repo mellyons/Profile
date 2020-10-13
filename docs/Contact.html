@@ -5,6 +5,7 @@
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 	</head>
 	<body>
@@ -33,20 +34,39 @@
 		
 		
 		<div class="container">
-			<form>
-			<p>Click button to see what happens</p>
-			<span class="border border-primary">Name:</span><input type="textbox"></input><br/>
-			<span class="border border-primary">Address:</span><br/>
-			<span class="border border-primary">City, State Zip:</span><br/>
-			<span class="border border-primary">Phone:</span><br/>
-			<span class="border border-primary">Email:</span><br/>
+			<form name="myForm" name="Information">
+			    <label for="wholeName">First and Last Name:</label>
+			    <span class="border border-primary">
+				<input type="text" name="wholeName" value="Please Type Here"></input><br/>
+			    </span>
+			    <label for="Address">Address:</label>
+			    <span class="border border-primary">
+				<input type="text" name="Address" value="Please Type Here"></input><br/>
+			    </span>
+			    <label for="Location">City, State:</label>
+			    <span class="border border-primary">
+				<input type="text" name="Location" value="Please Type Here"></input><br/>
+			    </span>
+			    <label for="Zip">Zip:</label>
+			    <span class="border border-primary">
+				<input type="text" name="Zip" value="Please Type Here" maxlength="5"></input><br/>
+			    </span>
+			    <label for="Phone">Phone:</label>
+			    <span class="border border-primary">
+				<input type="tel" name="Phone" value="Please Type Here"></input><br/>
+			    </span>
+			    <label for="Email">Email:</label>
+			    <span class="border border-primary">
+				<input type="email" name="Email" value="Please Type Here"></input><br/>
+			    </span>
+			</form>
 			
 			<br/>
 			<img class="img-responsive" src="../Profile/contact.jpg" alt="MGA"/>
 			<input type="button" value="Button" onclick="msg()">
-			</form>
+			
 		</div>
-		
+		<script src="form-validation.js"></script>
 		<script src="contact.js"></script>
 		<br/>
 		<br/>	
