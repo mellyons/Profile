@@ -1,3 +1,3 @@
 function msg() {
-  alert("User Name and Information is Display")
+  alert("User Name and Information would be displayed here")
 }
