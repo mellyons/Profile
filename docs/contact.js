@@ -1,4 +1,4 @@
-function validateForm() {
+function msg() {
   var x = document.forms["myForm"]["wholeName"]["Address"]["Location"]["Zip"]["Phone"]["Email"].value;
   if (x == "") {
     alert("Name must be filled out");
@@ -6,6 +6,3 @@ function validateForm() {
   }
 }
 
-function msg() {
-  alert("User Name and Information would be displayed here")
-}
