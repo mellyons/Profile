@@ -35,18 +35,18 @@
 		
 		
 		<div class="container">
-			<form name="myForm" style="border:double" onsubmit="return validateForm()" method="post">
+			<form name="myForm" style="border:double" action="/submit.php" method="post" onsubmit="return validateForm()">
 			    <label for="wholeName">First and Last Name:</label>
 				<span style="font-weight: bold">*</span>
-			    <span class="border border-primary" id="err1"></span>
+			    <span class="border border-primary"></span>
 				<input type="text" name="wholeName" placeholder="Enter your First and Last Name"></input><br/>
 			    <label for="Address">Address:</label>
 				<span style="font-weight: bold">*</span>
-			    <span class="border border-primary" id="err2"></span>
+			    <span class="border border-primary"></span>
 				<input type="text" name="Address" placeholder="000 Somewhere Ave."></input><br/>
 			    <label for="Location">City, State:</label>
 				<span style="font-weight: bold">*</span>
-		            <span class="border border-primary" id="err3"></span>
+		            <span class="border border-primary"></span>
 				<input type="text" name="Location" placeholder="Enter City and State"></input><br/>
 			    <label for="Zip">Zip:</label>
 				<span style="font-weight: bold">*</span>
@@ -54,18 +54,21 @@
 				<input type="text" name="Zip" placeholder="Enter your five digit Zip Code"></input><br/>
 			    <label for="Phone">Phone:</label>
 				<span style="font-weight: bold">*</span>
-			    <span class="border border-primary" id="err5"></span>
+			    <span class="border border-primary"></span>
 				<input type="tel" name="Phone" placeholder="000-000-0000"></input><br/>
 			    <label for="Email">Email:</label>
 				<span style="font-weight: bold">*</span>
-			    <span class="border border-primary" id="err6"></span>
+			    <span class="border border-primary"></span>
 				<input type="email" name="Email" placeholder="Email@somewhere.com"></input><br/>
+
+
+			<input type="submit" value="Send" name="Submit">
+			<input type="button" value="Reset" name="Reset">
 			</form>
 			
 			<br/>
 			<img class="img-responsive" src="../Profile/contact.jpg" alt="MGA"/><br/>
-			<input type="submit" value="Send" onclick="msgSend()">
-			<input type="button" value="Reset" onclick="msgReset()">
+			
 			
 		</div>
 		
