@@ -7,38 +7,27 @@ function validateForm() {
   var email = document.forms["myForm"]["Email"];
   
   
-  if (name.value == "") {
-    alert("Please enter first and last name");
-    name.focus();
-    return false;
+  if (name.length<1) {
+    document.getElementById("err1")"Please enter first and last name";
   }
-  
-  if (address.value == "") {
-    alert("Please enter mailing address");
-    address.focus();
-    return false;
+  if (address.length<1) {
+    document.getElementById("err2") = "Please enter first and last name";
   }
-  if (location.value == "") {
-    alert("Please enter city and state");
-    location.focus();
-    return false;
+  if (location.length<1) {
+    document.getElementById("err3") = "Please enter first and last name";
   }
-  if (zip.value == "") {
-    alert("Please enter zip code");
-    return false;
+  if (zip.length<1) {
+   document.getElementById("err4") = "Please enter first and last name";
   }
-  if (phone.value == "") {
-    phone.focus();
-    alert("Please enter phone number");
-    return false;
+  if (phone.length<1) {
+    document.getElementById("err5") = "Please enter first and last name";
   }
-  if (email.value == "") {
-    alert("Please enter email address");
-    email.focus();
-    return false;
+  if (email.length<1) {
+   document.getElementById("err6") = "Please enter first and last name";
   }
-  
-  return true;
+  if(name.length<1 || address.length<1 || location.length<1 || zip.length<1 || phone.length<1 || email.length<1) {
+  return false;
+  }
 }
 
 
