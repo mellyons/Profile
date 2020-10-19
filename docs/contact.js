@@ -1,10 +1,10 @@
 function validateForm() {
-  var name = document.forms["myForm"]["wholeName"];
-  var address = document.forms["myForm"]["Address"];
-  var location = document.forms["myForm"]["Location"];
-  var zip = document.forms["myForm"]["Zip"];
-  var phone = document.forms["myForm"]["Phone"];
-  var email = document.forms["myForm"]["Email"];
+  var name = document.forms["myForm"]["wholeName"].value;
+  var address = document.forms["myForm"]["Address"].value;
+  var location = document.forms["myForm"]["Location"].value;
+  var zip = document.forms["myForm"]["Zip"].value;
+  var phone = document.forms["myForm"]["Phone"].value;
+  var email = document.forms["myForm"]["Email"].value;
   
   
   if (name.length<1) {
