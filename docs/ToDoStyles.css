@@ -16,6 +16,6 @@ a:focus{
 a:visited{
   color:#0f0f0f;
 }
-li {
-  text-decoration: none;
+ul {
+  list-style-type: none; /* Removes the bullets */
 }
